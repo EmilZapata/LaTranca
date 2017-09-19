@@ -26,5 +26,10 @@ namespace LaTranca.Controllers
 
             return View();
         }
+
+        public ActionResult InicioLaTranca()
+        {
+            return View();
+        }
     }
 }

@@ -5,6 +5,24 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaTranca.MVC.E-Commerce", "LaTranca\LaTranca.MVC.E-Commerce.csproj", "{6C35F4E9-F3E8-4758-9818-D4D320881EAE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Presentacion", "1.Presentacion", "{BE44CB29-E744-48D5-8D10-36780EC96D68}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Negocio", "2.Negocio", "{D660470C-3835-4658-9553-D6AF651EBB78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Infraestructura", "3.Infraestructura", "{584F6190-DCC8-453B-9A73-EB06CCCA9ED0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Base", "4.Base", "{2F757897-7CAE-4682-B38F-8AC3F18465FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaTranca.Dominio.DTO", "LaTranca.Dominio.DTO\LaTranca.Dominio.DTO.csproj", "{7EAF817E-BCF9-4993-8F70-EDDC101D4F4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaTranca.Dominio.Interfaces", "LaTranca.Dominio.Interfaces\LaTranca.Dominio.Interfaces.csproj", "{2E7B904B-B09D-43E7-ACBC-A95A1B2BE6A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaTranca.ServicioAplicacion", "LaTranca.ServicioAplicacion\LaTranca.ServicioAplicacion.csproj", "{C6D4B20C-A908-4643-B92B-2767AC412952}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaTranca.Infraestructura.Datos", "LaTranca.Infraestructura.Datos\LaTranca.Infraestructura.Datos.csproj", "{54B9537F-C43D-4EF6-B0FA-CCE1BAC14955}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaTranca.Context", "LaTranca.Context\LaTranca.Context.csproj", "{C94322B6-6A93-4EE3-BF47-A04DDC0F3716}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +33,36 @@ Global
 		{6C35F4E9-F3E8-4758-9818-D4D320881EAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C35F4E9-F3E8-4758-9818-D4D320881EAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C35F4E9-F3E8-4758-9818-D4D320881EAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EAF817E-BCF9-4993-8F70-EDDC101D4F4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EAF817E-BCF9-4993-8F70-EDDC101D4F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EAF817E-BCF9-4993-8F70-EDDC101D4F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EAF817E-BCF9-4993-8F70-EDDC101D4F4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E7B904B-B09D-43E7-ACBC-A95A1B2BE6A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E7B904B-B09D-43E7-ACBC-A95A1B2BE6A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E7B904B-B09D-43E7-ACBC-A95A1B2BE6A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E7B904B-B09D-43E7-ACBC-A95A1B2BE6A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6D4B20C-A908-4643-B92B-2767AC412952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6D4B20C-A908-4643-B92B-2767AC412952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6D4B20C-A908-4643-B92B-2767AC412952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6D4B20C-A908-4643-B92B-2767AC412952}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54B9537F-C43D-4EF6-B0FA-CCE1BAC14955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54B9537F-C43D-4EF6-B0FA-CCE1BAC14955}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54B9537F-C43D-4EF6-B0FA-CCE1BAC14955}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54B9537F-C43D-4EF6-B0FA-CCE1BAC14955}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C94322B6-6A93-4EE3-BF47-A04DDC0F3716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C94322B6-6A93-4EE3-BF47-A04DDC0F3716}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C94322B6-6A93-4EE3-BF47-A04DDC0F3716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C94322B6-6A93-4EE3-BF47-A04DDC0F3716}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6C35F4E9-F3E8-4758-9818-D4D320881EAE} = {BE44CB29-E744-48D5-8D10-36780EC96D68}
+		{7EAF817E-BCF9-4993-8F70-EDDC101D4F4C} = {D660470C-3835-4658-9553-D6AF651EBB78}
+		{2E7B904B-B09D-43E7-ACBC-A95A1B2BE6A1} = {D660470C-3835-4658-9553-D6AF651EBB78}
+		{C6D4B20C-A908-4643-B92B-2767AC412952} = {D660470C-3835-4658-9553-D6AF651EBB78}
+		{54B9537F-C43D-4EF6-B0FA-CCE1BAC14955} = {584F6190-DCC8-453B-9A73-EB06CCCA9ED0}
+		{C94322B6-6A93-4EE3-BF47-A04DDC0F3716} = {2F757897-7CAE-4682-B38F-8AC3F18465FC}
 	EndGlobalSection
 EndGlobal

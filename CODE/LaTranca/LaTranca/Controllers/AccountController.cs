@@ -481,5 +481,13 @@ namespace LaTranca.Controllers
             }
         }
         #endregion
+
+        #region LaTranca
+        [AllowAnonymous]
+        public ActionResult LoginLaTranca()
+        {
+            return View();
+        }
+        #endregion
     }
 }
