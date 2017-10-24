@@ -1,0 +1,14 @@
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\bin\Debug\LaTranca.Infraestructura.Datos.dll.config
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\bin\Debug\LaTranca.Infraestructura.Datos.dll
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\bin\Debug\LaTranca.Infraestructura.Datos.pdb
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\bin\Debug\EntityFramework.dll
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\bin\Debug\EntityFramework.SqlServer.dll
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\bin\Debug\LaTranca.Context.dll
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\bin\Debug\LaTranca.Dominio.DTO.dll
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\bin\Debug\LaTranca.Context.pdb
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\bin\Debug\LaTranca.Dominio.DTO.pdb
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\bin\Debug\EntityFramework.xml
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\bin\Debug\EntityFramework.SqlServer.xml
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\obj\Debug\LaTranca.Infraestructura.Datos.csprojResolveAssemblyReference.cache
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\obj\Debug\LaTranca.Infraestructura.Datos.dll
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\obj\Debug\LaTranca.Infraestructura.Datos.pdb

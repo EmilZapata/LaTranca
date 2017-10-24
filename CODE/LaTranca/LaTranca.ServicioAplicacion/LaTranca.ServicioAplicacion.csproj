@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>c6d4b20c-a908-4643-b92b-2767ac412952</ProjectGuid>
+    <ProjectGuid>{C6D4B20C-A908-4643-B92B-2767AC412952}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LaTranca.ServicioAplicacion</RootNamespace>
@@ -30,24 +30,33 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="LaTranca\FactoryGeneral.cs" />
+    <Compile Include="LaTranca\GeneralAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LaTranca.Context\LaTranca.Context.csproj">
+      <Project>{C94322B6-6A93-4EE3-BF47-A04DDC0F3716}</Project>
+      <Name>LaTranca.Context</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LaTranca.Dominio.DTO\LaTranca.Dominio.DTO.csproj">
+      <Project>{7EAF817E-BCF9-4993-8F70-EDDC101D4F4C}</Project>
+      <Name>LaTranca.Dominio.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LaTranca.Infraestructura.Datos\LaTranca.Infraestructura.Datos.csproj">
+      <Project>{54B9537F-C43D-4EF6-B0FA-CCE1BAC14955}</Project>
+      <Name>LaTranca.Infraestructura.Datos</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -57,5 +66,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-
- </Project>
+</Project>

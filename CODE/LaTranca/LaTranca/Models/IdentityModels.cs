@@ -29,5 +29,7 @@ namespace LaTranca.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<LaTranca.Dominio.DTO.LaTranca.Producto> Productoes { get; set; }
     }
 }

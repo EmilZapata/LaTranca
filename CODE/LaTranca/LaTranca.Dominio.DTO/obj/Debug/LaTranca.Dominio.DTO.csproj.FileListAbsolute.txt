@@ -1,0 +1,4 @@
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Dominio.DTO\bin\Debug\LaTranca.Dominio.DTO.dll
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Dominio.DTO\bin\Debug\LaTranca.Dominio.DTO.pdb
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Dominio.DTO\obj\Debug\LaTranca.Dominio.DTO.dll
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Dominio.DTO\obj\Debug\LaTranca.Dominio.DTO.pdb

@@ -67,3 +67,11 @@ D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\Micro
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\obj\Debug\LaTranca.MVC.E-Commerce.csprojResolveAssemblyReference.cache
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\obj\Debug\LaTranca.dll
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\obj\Debug\LaTranca.pdb
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.Dominio.DTO.dll
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.ServicioAplicacion.dll
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.Context.dll
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.Infraestructura.Datos.dll
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.Dominio.DTO.pdb
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.ServicioAplicacion.pdb
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.Context.pdb
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.Infraestructura.Datos.pdb

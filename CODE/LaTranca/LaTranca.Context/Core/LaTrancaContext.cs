@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LaTranca.Dominio.DTO.LaTranca;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LaTranca.Context.Core
 {
- public   class LaTrancaContext : DbContext
+    public class LaTrancaContext : DbContext
     {
         static LaTrancaContext()
         {
@@ -15,6 +16,8 @@ namespace LaTranca.Context.Core
         }
 
         public LaTrancaContext() : base("Name=LaTrancaContext") { }
+
+        public DbSet<Producto> Productos { get; set; }
 
     }
 }
