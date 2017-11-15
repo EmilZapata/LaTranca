@@ -16,7 +16,7 @@
     <link href="~/Content_LaTranca/css/ionicons.min.css" rel="stylesheet" />
     <link href="~/Content_LaTranca/css/animate.css" rel="stylesheet" />
     <link href="~/Content_LaTranca/css/responsive.css" rel="stylesheet" />
-
+    <link href="~/Content_LaTranca/Gritter/jquery.gritter.css" rel="stylesheet" />
     <!-- Js -->
     <script src="~/Content_LaTranca/js/vendor/modernizr-2.6.2.min.js"></script>
     <script src="~/Content_LaTranca/js/vendor/jquery-1.10.2.min.js"></script>
@@ -26,18 +26,20 @@
     <script src="~/Content_LaTranca/js/min/waypoints.min.js"></script>
     <script src="~/Content_LaTranca/js/jquery.counterup.js"></script>
     @*<script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/min/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.js"></script>*@
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/min/waypoints.min.js"></script>
+        <script src="js/jquery.counterup.js"></script>*@
     <!-- Google Map -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="~/Content_LaTranca/js/google-map-init.js"></script>
-   
+
+    <script src="~/Content_LaTranca/js/owl.carousel.min.js"></script>
     <script src="~/Content_LaTranca/js/main.js"></script>
+    <script src="~/Content_LaTranca/Gritter/jquery.gritter.js"></script>
 </head>
 <body>
 
@@ -60,8 +62,20 @@
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="/Home/InicioLaTranca">Inicio</a></li>
                                 <li><a href="/Productos/Index">Productos</a></li>
-                                <li><a href="/Servicios/Index">Servicios</a></li>
+                                <li><a href="/Eventos/Index">Eventos</a></li>
+                                @*<li><a href="/Servicios/Index">Servicios</a></li>*@
                                 <li><a href="/Contactos/Index">Contactanos</a></li>
+
+                                @if (User.IsInRole("TR_COLABORADOR"))
+                                {
+                                    <li>
+                                        <a href="/Contactos/Index">Registrar Productos</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Contactos/Index">Gestion de usuarios</a>
+                                    </li>
+                                }
+
                                 @Html.Partial("_LoginPartialLaTranca")
                             </ul>
 
@@ -73,5 +87,10 @@
     </header><!-- header close -->
     <!-- Slider Start -->
     @RenderBody();
+
+
+    <!--Scrits -->
+
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

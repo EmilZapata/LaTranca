@@ -5,6 +5,9 @@
     Layout = "~/Views/Shared/_LayoutLaTranca.cshtml";
 }
 
+<link href="~/Content_LaTranca/css/animate1.css" rel="stylesheet" />
+<link href="~/Content_LaTranca/css/style1.css" rel="stylesheet" />
+
 <!-- Slider Start -->
 <section id="global-header">
     <div class="container">
@@ -20,8 +23,16 @@
 </section>
 <!-- login form start -->
 
-<section id="contact-form">
+<section id="contact-form" style="padding-top : 30px">
     <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h1>
+                    Iniciar Sesion
+                </h1>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4 col-sm-12">
@@ -31,16 +42,14 @@
                         @Html.AntiForgeryToken()
                         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                         <div class="form-group">
-                            <div class="col-md-10">
                                 @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Ingrese su usuario" })
                                 @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
-                            </div>
+                           
                         </div>
                         <div class="form-group">
-                            <div class="col-md-10">
                                 @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Ingrese su usuario" })
                                 @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
-                            </div>
+                           
                         </div>
                         <div class="form-group">
                             <div class="col-md-offset-2 col-md-10">
@@ -51,27 +60,20 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-md-offset-2 col-md-10">
-                                <input type="submit" value="Log in" class="btn btn-default" />
-                            </div>
+                            @Html.ActionLink("Suscribirse", "RegistrarUsuarioLaTranca","Account")
                         </div>
-                        <p>
-                            @Html.ActionLink("Register as a new user", "Register")
-                        </p>
+                        <div class="form-group">
+                            <button class="btn btn-default" type="submit">Entrar</button>
+                        </div>
                     }
-
                     @*<form>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Ingrese su usuario">
+                            <input id="usuario" type="text" class="form-control" placeholder="Ingrese su usuario">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Contraseña">
-                        </div>
-                        <div class="form-group">
-                            <a href="#">Registrase</i>
+                            <input id="contraseña" type="password" class="form-control" placeholder="Contraseña">
                         </div>
                         <form>
-                            <button class="btn btn-default" type="submit">Entrar</button>
                         </form>
                     </form>*@
                 </div>
@@ -81,4 +83,20 @@
 
     </div>
 </section>
+
+@*<section id="contact-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 col-sm-12">
+                <div class="block">
+
+
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+    </div>
+</section>*@
 

@@ -10,6 +10,7 @@ namespace LaTranca.ServicioAplicacion.LaTranca
 {
     public class GeneralAppService
     {
+        #region Tabla_Producto
         public List<Producto> ListProducto()
         {
             return FactoryGeneral.GetProductoRepository().GetListProductos();
@@ -24,5 +25,22 @@ namespace LaTranca.ServicioAplicacion.LaTranca
         {
             return FactoryGeneral.GetProductoRepository().GetId(id);
         }
+        #endregion
+
+        #region Tabla->TR_USUARIO
+        public TR_USUARIO GetUsuarioID(int idUsuario)
+        {
+            return FactoryGeneral.GetUsuarioRepository().GetUsuarioID(idUsuario);
+        }
+
+        public List<TR_USUARIO> GetListUsuariosTR()
+        {
+            return FactoryGeneral.GetUsuarioRepository().GetListUsuariosTR();
+        }
+
+        public Notification SaveUpdate(TR_USUARIO entity) {
+            return FactoryGeneral.GetUsuarioRepository().SaveUpdate(entity);
+        }
+        #endregion
     }
 }

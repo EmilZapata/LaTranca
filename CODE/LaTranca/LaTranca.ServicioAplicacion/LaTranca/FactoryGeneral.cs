@@ -16,5 +16,10 @@ namespace LaTranca.ServicioAplicacion.LaTranca
         {
             return new ProductoRepository(db);
         }
+
+        public static TR_USUARIO_Repository GetUsuarioRepository()
+        {
+            return new TR_USUARIO_Repository(db);
+        }
     }
 }

@@ -18,6 +18,6 @@ namespace LaTranca.Context.Core
         public LaTrancaContext() : base("Name=LaTrancaContext") { }
 
         public DbSet<Producto> Productos { get; set; }
-
+        public DbSet<TR_USUARIO> USUARIOS { get; set; }
     }
 }

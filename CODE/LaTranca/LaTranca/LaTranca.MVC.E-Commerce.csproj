@@ -174,6 +174,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductosController.cs" />
+    <Compile Include="Controllers\SeguridadController.cs" />
     <Compile Include="Controllers\ServiciosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -188,14 +189,18 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content_LaTranca\css\animate.css" />
+    <Content Include="Content_LaTranca\css\animate1.css" />
     <Content Include="Content_LaTranca\css\bootstrap.min.css" />
     <Content Include="Content_LaTranca\css\font-awesome.min.css" />
     <Content Include="Content_LaTranca\css\ionicons.min.css" />
     <Content Include="Content_LaTranca\css\owl.carousel.css" />
     <Content Include="Content_LaTranca\css\responsive.css" />
     <Content Include="Content_LaTranca\css\style.css" />
+    <Content Include="Content_LaTranca\css\style1.css" />
     <Content Include="Content_LaTranca\fonts\fontawesome-webfont.svg" />
     <Content Include="Content_LaTranca\fonts\ionicons.svg" />
+    <Content Include="Content_LaTranca\Gritter\jquery.gritter.css" />
+    <Content Include="Content_LaTranca\Gritter\jquery.gritter.js" />
     <Content Include="Content_LaTranca\img\call-to-action-bg.jpg" />
     <Content Include="Content_LaTranca\img\clients\clients-logo-9.png" />
     <Content Include="Content_LaTranca\img\clients\clients-logo1.png" />
@@ -212,6 +217,7 @@
     <Content Include="Content_LaTranca\img\item-img1.jpg" />
     <Content Include="Content_LaTranca\img\logo.png" />
     <Content Include="Content_LaTranca\img\portfolio\cafe_tranca.jpg" />
+    <Content Include="Content_LaTranca\img\portfolio\carro.png" />
     <Content Include="Content_LaTranca\img\portfolio\cosecha.jpg" />
     <Content Include="Content_LaTranca\img\portfolio\grano.jpg" />
     <Content Include="Content_LaTranca\img\portfolio\logo.png" />
@@ -308,9 +314,12 @@
     <Content Include="Views\Shared\_LoginPartialLaTranca.cshtml" />
     <Content Include="Views\Productos\ListProductos.cshtml" />
     <Content Include="Views\Productos\SaveUpdateProducto.cshtml" />
+    <Content Include="Views\Account\RegistrarUsuarioLaTranca.cshtml" />
+    <Content Include="Views\Account\ExitoRegistroUsuario.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Seguridad\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

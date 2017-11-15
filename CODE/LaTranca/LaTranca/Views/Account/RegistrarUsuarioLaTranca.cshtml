@@ -1,0 +1,145 @@
+﻿@model LaTranca.Dominio.DTO.LaTranca.TR_USUARIO
+
+@{
+    ViewBag.Title = "RegistrarUsuarioLaTranca";
+    Layout = "~/Views/Shared/_LayoutLaTranca.cshtml";
+}
+
+
+<link href="~/Content_LaTranca/css/animate1.css" rel="stylesheet" />
+<link href="~/Content_LaTranca/css/style1.css" rel="stylesheet" />
+
+
+<section id="contact-form" style="padding-top : 30px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h1>
+                    Registrate
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 col-sm-12">
+                <div class="block">
+                    @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal form-nuevoUsuario", role = "form" }))
+                    {
+                        <div class="form-group">
+                            <input id="USER_NOMBRES" name="USER_NOMBRES" type="text" class="form-control" placeholder="Nombres">
+                        </div>
+                        <div class="form-group">
+                            <input id="USER_APE_PATERNO" name="USER_APE_PATERNO" type="text" class="form-control" placeholder="Ap. Paterno">
+                        </div>
+                        <div class="form-group">
+                            <input id="USER_APE_MATERNO" name="USER_APE_MATERNO" type="text" class="form-control" placeholder="Ap. Materno">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <input id="USER_DNI" name="USER_DNI" type="text" class="form-control" placeholder="DNI">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <input id="USER_RUC" name="USER_RUC" type="text" class="form-control" placeholder="RUC">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <input id="USER_TELEFONO" name="USER_TELEFONO" type="text" class="form-control" placeholder="Telefono">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <input id="USER_CELULAR" name="USER_CELULAR" type="text" class="form-control" placeholder="Celular">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input id="USER_DIRECCION" name="USER_DIRECCION" type="text" class="form-control" placeholder="Direccion">
+                        </div>
+                        <div class="form-group">
+                            <input id="USER_CORREO" type="email" name="USER_CORREO" class="form-control" placeholder="Correo">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <form>
+                                    <button class="btn btn-default" id="btnRegistrarUsuario" type="button">Registrar</button>
+                                </form>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <form>
+                                    <button class="btn btn-default" onclick="location.href = '/Account/LoginLaTranca'" type="button">Cancelar</button>
+                                </form>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+    </div>
+</section>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('#btnRegistrarUsuario').on('click', function () {
+                var usuario = getObjectUsuario();
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/Account/RegistrarUsuarioLaTranca',
+                    data: {
+                        model: usuario
+                    },
+                    typedata: 'JSON',
+                    success: function (data) {
+                        var mensaje = new Mensaje(data.notification);
+
+                        if (mensaje.tipo == 'exito') {
+                            mensaje.enviarMensaje();
+                            window.location = "/Account/ExitoRegistroUsuario";
+                        } else {
+                            mensaje.enviarMensaje();
+                        }
+                    },
+                    error: function () {
+                        var mensaje = new Mensaje({
+                            tipo: 'error',
+                            titulo: 'Error',
+                            mensaje: 'Error en el sistema.'
+                        });
+
+                        mensaje.enviarMensaje();
+                    }
+                });
+            });
+
+            function getObjectUsuario() {
+                var usuario = new Object();
+                
+                usuario.USER_NOMBRES = $('#USER_NOMBRES').val();
+                usuario.USER_APE_PATERNO = $('#USER_APE_PATERNO').val();
+                usuario.USER_APE_MATERNO = $('#USER_APE_MATERNO').val();
+                usuario.USER_DNI = $('#USER_DNI').val();
+                usuario.USER_RUC = $('#USER_RUC').val();
+                usuario.USER_TELEFONO = $('#USER_TELEFONO').val();
+                usuario.USER_CELULAR = $('#USER_CELULAR').val();
+                usuario.USER_DIRECCION = $('#USER_DIRECCION').val();
+                usuario.USER_CORREO = $('#USER_CORREO').val();
+
+                return usuario;
+            }
+        });
+    </script>
+}
+
+
+
+
