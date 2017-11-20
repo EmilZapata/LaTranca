@@ -12,3 +12,17 @@ D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Infraestr
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\obj\Debug\LaTranca.Infraestructura.Datos.csprojResolveAssemblyReference.cache
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\obj\Debug\LaTranca.Infraestructura.Datos.dll
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\obj\Debug\LaTranca.Infraestructura.Datos.pdb
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\bin\Debug\LaTranca.Infraestructura.Datos.dll.config
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\bin\Debug\LaTranca.Infraestructura.Datos.dll
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\bin\Debug\LaTranca.Infraestructura.Datos.pdb
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\bin\Debug\EntityFramework.dll
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\bin\Debug\LaTranca.Context.dll
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\bin\Debug\LaTranca.Dominio.DTO.dll
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\bin\Debug\LaTranca.Context.pdb
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\bin\Debug\LaTranca.Dominio.DTO.pdb
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\bin\Debug\EntityFramework.xml
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\obj\Debug\LaTranca.Infraestructura.Datos.csprojResolveAssemblyReference.cache
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\obj\Debug\LaTranca.Infraestructura.Datos.dll
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Infraestructura.Datos\obj\Debug\LaTranca.Infraestructura.Datos.pdb

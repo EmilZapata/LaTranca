@@ -10,3 +10,15 @@ D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Context\b
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Context\obj\Debug\LaTranca.Context.csprojResolveAssemblyReference.cache
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Context\obj\Debug\LaTranca.Context.dll
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Context\obj\Debug\LaTranca.Context.pdb
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Context\bin\Debug\LaTranca.Context.dll.config
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Context\bin\Debug\LaTranca.Context.dll
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Context\bin\Debug\LaTranca.Context.pdb
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Context\bin\Debug\EntityFramework.dll
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Context\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Context\bin\Debug\LaTranca.Dominio.DTO.dll
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Context\bin\Debug\LaTranca.Dominio.DTO.pdb
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Context\bin\Debug\EntityFramework.xml
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Context\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Context\obj\Debug\LaTranca.Context.csprojResolveAssemblyReference.cache
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Context\obj\Debug\LaTranca.Context.dll
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.Context\obj\Debug\LaTranca.Context.pdb

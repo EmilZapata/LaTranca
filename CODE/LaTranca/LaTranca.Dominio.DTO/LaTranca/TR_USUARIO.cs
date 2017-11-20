@@ -12,20 +12,17 @@ namespace LaTranca.Dominio.DTO.LaTranca
     public class TR_USUARIO
     {
         [Key]
-        public int USER_ID { get; set; }
+        public int USER_ID { get; set; } 
         public string AspNetUsers_Id { get; set; }
-        public string USER_CODIGO { get; set; }
-        public int? USER_TIPO { get; set; }
         public string USER_NOMBRES { get; set; }
         public string USER_APE_PATERNO { get; set; }
         public string USER_APE_MATERNO { get; set; }
-        public string USER_DNI { get; set; }
-        public string USER_RUC { get; set; }
+        public string USER_NUM_DNI { get; set; }
         public string USER_TELEFONO { get; set; }
         public string USER_CELULAR { get; set; }
         public string USER_DIRECCION { get; set; }
         public string USER_CORREO { get; set; }
-        public bool? USER_ESTADO { get; set; }
-        public bool? USER_ACCESO_SISTEMA { get; set; }
+        public int USER_TIPO_DOCUMENTO { get; set; }
+        public int USER_ESTADO { get; set; }
     }
 }

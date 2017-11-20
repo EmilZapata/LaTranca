@@ -11,3 +11,16 @@ D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.ServicioA
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.ServicioAplicacion\obj\Debug\LaTranca.ServicioAplicacion.csprojResolveAssemblyReference.cache
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.ServicioAplicacion\obj\Debug\LaTranca.ServicioAplicacion.dll
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.ServicioAplicacion\obj\Debug\LaTranca.ServicioAplicacion.pdb
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.ServicioAplicacion\bin\Debug\LaTranca.ServicioAplicacion.dll
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.ServicioAplicacion\bin\Debug\LaTranca.ServicioAplicacion.pdb
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.ServicioAplicacion\bin\Debug\LaTranca.Context.dll
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.ServicioAplicacion\bin\Debug\LaTranca.Dominio.DTO.dll
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.ServicioAplicacion\bin\Debug\LaTranca.Infraestructura.Datos.dll
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.ServicioAplicacion\bin\Debug\EntityFramework.dll
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.ServicioAplicacion\bin\Debug\LaTranca.Context.pdb
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.ServicioAplicacion\bin\Debug\LaTranca.Dominio.DTO.pdb
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.ServicioAplicacion\bin\Debug\LaTranca.Infraestructura.Datos.pdb
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.ServicioAplicacion\bin\Debug\EntityFramework.xml
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.ServicioAplicacion\obj\Debug\LaTranca.ServicioAplicacion.csprojResolveAssemblyReference.cache
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.ServicioAplicacion\obj\Debug\LaTranca.ServicioAplicacion.dll
+C:\Users\CristhianR\Desktop\LaTranca\CODE\LaTranca\LaTranca.ServicioAplicacion\obj\Debug\LaTranca.ServicioAplicacion.pdb
