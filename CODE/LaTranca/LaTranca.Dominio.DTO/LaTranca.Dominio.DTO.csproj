@@ -41,7 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LaTranca\Producto.cs" />
+    <Compile Include="BaseDTO.cs" />
+    <Compile Include="LaTranca\TR_DETALLE_VENTA.cs" />
+    <Compile Include="LaTranca\TR_FERIA.cs" />
+    <Compile Include="LaTranca\TR_PARAMETRO.cs" />
+    <Compile Include="LaTranca\TR_PEDIDO.cs" />
+    <Compile Include="LaTranca\TR_PRODUCTO.cs" />
+    <Compile Include="LaTranca\TR_TIPO_PARAMETRO.cs" />
     <Compile Include="LaTranca\TR_USUARIO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
