@@ -38,7 +38,7 @@ namespace LaTranca.ServicioAplicacion.LaTranca
             return FactoryGeneral.GetUsuarioRepository().GetListUsuariosTR();
         }
 
-        public Notification SaveUpdate(TR_USUARIO entity) {
+        public Notification SaveUpdateUsuario(TR_USUARIO entity) {
             return FactoryGeneral.GetUsuarioRepository().SaveUpdate(entity);
         }
         #endregion

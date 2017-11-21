@@ -21,20 +21,10 @@
     <link href="~/Content_LaTranca/font-awesome/css/font-awesome.css" rel="stylesheet">
     <link href="~/Content_LaTranca/css_iu/animate.css" rel="stylesheet">
     <link href="~/Content_LaTranca/css_iu/style.css" rel="stylesheet">
+    <link href="~/Content_LaTranca/Gritter/jquery.gritter.css" rel="stylesheet" />
 
-    <!-- Js -->
-    <script src="~/Content_LaTranca/js_iu/bootstrap.min.js"></script>
-    <script src="~/Content_LaTranca/js_iu/owl.carousel.min.js"></script>
-    <script src="~/Content_LaTranca/js_iu/plugins.js"></script>
-    <script src="~/Content_LaTranca/js_iu/min/waypoints.min.js"></script>
-    <script src="~/Content_LaTranca/js_iu/jquery.counterup.js"></script>
-
-    <script src="~/Content_LaTranca/js_iu/main.js"></script>
-
-
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="~/Content_LaTranca/js/google-map-init.js"></script>
-
+    <!--Css -->
+    @RenderSection("Css", required: false)
 </head>
 <body>
 
@@ -86,8 +76,34 @@
     @RenderBody();
 
 
-    <!--Scrits -->
+    <!-- Mainly scripts -->
+    <script src="~/Content_LaTranca/js/jquery-2.1.1.js"></script>
+    <script src="~/Content_LaTranca/js/bootstrap.min.js"></script>
+    <script src="~/Content_LaTranca/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="~/Content_LaTranca/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="~/Content_LaTranca/js/plugins/dataTables/datatables.min.js"></script>
 
+    <!-- Custom and plugin javascript -->
+    <script src="~/Content_LaTranca/js/inspinia.js"></script>
+    <script src="~/Content_LaTranca/js/plugins/pace/pace.min.js"></script>
+
+    <!-- FooTable -->
+    <script src="~/Content_LaTranca/js/plugins/footable/footable.all.min.js"></script>
+
+    <!-- Js -->
+    <script src="~/Content_LaTranca/js_iu/bootstrap.min.js"></script>
+    <script src="~/Content_LaTranca/js_iu/owl.carousel.min.js"></script>
+    <script src="~/Content_LaTranca/js_iu/plugins.js"></script>
+    <script src="~/Content_LaTranca/js_iu/min/waypoints.min.js"></script>
+    <script src="~/Content_LaTranca/js_iu/jquery.counterup.js"></script>
+    <script src="~/Content_LaTranca/js_iu/main.js"></script>
+
+    <script src="~/Content_LaTranca/Gritter/jquery.gritter.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="~/Content_LaTranca/js/google-map-init.js"></script>
+
+    <!--Scrits -->
     @RenderSection("Scripts", required: false)
 </body>
 </html>

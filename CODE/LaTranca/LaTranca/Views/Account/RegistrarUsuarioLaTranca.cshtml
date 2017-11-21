@@ -1,15 +1,12 @@
 ﻿@model LaTranca.Dominio.DTO.LaTranca.TR_USUARIO
-
 @{
     ViewBag.Title = "RegistrarUsuarioLaTranca";
     Layout = "~/Views/Shared/_LayoutLaTranca.cshtml";
 }
-
-
-<link href="~/Content_LaTranca/css/animate1.css" rel="stylesheet" />
-<link href="~/Content_LaTranca/css/style1.css" rel="stylesheet" />
-
-
+@section Css{
+    <link href="~/Content_LaTranca/css/animate1.css" rel="stylesheet" />
+    <link href="~/Content_LaTranca/css/style1.css" rel="stylesheet" />
+}
 <section id="contact-form" style="padding-top : 30px">
     <div class="container">
         <div class="row">
@@ -86,10 +83,8 @@
             </div>
             <div class="col-md-3"></div>
         </div>
-
     </div>
 </section>
-
 @section Scripts{
     <script>
         $(document).ready(function () {
@@ -143,7 +138,5 @@
         });
     </script>
 }
-
-
 
 

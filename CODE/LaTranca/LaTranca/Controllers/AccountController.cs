@@ -85,7 +85,7 @@ namespace LaTranca.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
-                    return RedirectToLocal("/Home/InicioLaTranca");
+                    return RedirectToLocal("/ModuloAdministracion/GestorUsuarios/Index");
                 case SignInStatus.LockedOut:
                     return View("Lockout");
                 case SignInStatus.RequiresVerification:
@@ -510,7 +510,7 @@ namespace LaTranca.Controllers
         {
             Notification ntf = null;
 
-            ntf = appLT.SaveUpdate(model);
+            ntf = appLT.SaveUpdateUsuario(model);
 
             return Json(new
             {
@@ -553,7 +553,7 @@ namespace LaTranca.Controllers
         {
             Notification ntf = null;
 
-            ntf = appLT.SaveUpdate(model);
+            ntf = appLT.SaveUpdateUsuario(model);
 
             return Json(new
             {
