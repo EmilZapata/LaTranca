@@ -32,24 +32,24 @@ namespace LaTranca.Controllers
 
             if (pedido == null)
             {
-                pedido = new Producto();
+                pedido = new TR_PRODUCTO();
             }
 
             return View(pedido);
         }
 
         [HttpPost]
-        public ActionResult SaveUpdateProducto(Producto model)
+        public ActionResult SaveUpdateProducto(TR_PRODUCTO model)
         {
             Notification notification = null;
 
-            if (model.idProducto == 0)
+            if (model.PROD_ID == 0)
             {
                 notification = app.SaveUpdateProducto(model);
             }
             else
             {
-                var producto = app.GetIdProducto(model.idProducto);
+                var producto = app.GetIdProducto(model.PROD_ID);
                 UpdateModel(producto);
                 app.SaveUpdateProducto(producto);
             }

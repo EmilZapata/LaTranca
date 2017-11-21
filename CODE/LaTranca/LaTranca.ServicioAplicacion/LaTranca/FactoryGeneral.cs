@@ -12,9 +12,9 @@ namespace LaTranca.ServicioAplicacion.LaTranca
     {
         public static LaTrancaContext db = new LaTrancaContext();
 
-        public static ProductoRepository GetProductoRepository()
+        public static TR_PRODUCTORepository GetProductoRepository()
         {
-            return new ProductoRepository(db);
+            return new TR_PRODUCTORepository(db);
         }
 
         public static TR_USUARIO_Repository GetUsuarioRepository()

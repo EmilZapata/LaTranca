@@ -38,12 +38,16 @@
                         <div class="row">
                             <div class="col-md-6 col-sm-12">
                                 <div class="form-group">
-                                    <input id="USER_DNI" name="USER_DNI" type="text" class="form-control" placeholder="DNI">
+                                    <select id="tipoDocumento" class="form-control">
+                                        <option value="1">DNI</option>
+                                        <option value="2">RUC</option>
+                                    </select>
+                                    @* <input id="USER_DNI" name="USER_DNI" type="text" class="form-control" placeholder="DNI">*@
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12">
                                 <div class="form-group">
-                                    <input id="USER_RUC" name="USER_RUC" type="text" class="form-control" placeholder="RUC">
+                                    <input id="USER_NUM_DOCUMENTO" name="USER_NUM_DOCUMENTO" type="text" class="form-control" placeholder="DNI y/o RUC">
                                 </div>
                             </div>
                         </div>
@@ -123,12 +127,12 @@
 
             function getObjectUsuario() {
                 var usuario = new Object();
-                
+
                 usuario.USER_NOMBRES = $('#USER_NOMBRES').val();
                 usuario.USER_APE_PATERNO = $('#USER_APE_PATERNO').val();
                 usuario.USER_APE_MATERNO = $('#USER_APE_MATERNO').val();
-                usuario.USER_DNI = $('#USER_DNI').val();
-                usuario.USER_RUC = $('#USER_RUC').val();
+                usuario.USER_TIPO_DOCUMENTO = $('#tipoDocumento').val();
+                usuario.USER_NUM_DOCUMENTO = $('#USER_NUM_DOCUMENTO').val();
                 usuario.USER_TELEFONO = $('#USER_TELEFONO').val();
                 usuario.USER_CELULAR = $('#USER_CELULAR').val();
                 usuario.USER_DIRECCION = $('#USER_DIRECCION').val();

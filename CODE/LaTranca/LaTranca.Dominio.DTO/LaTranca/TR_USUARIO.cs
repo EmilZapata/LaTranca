@@ -17,12 +17,12 @@ namespace LaTranca.Dominio.DTO.LaTranca
         public string USER_NOMBRES { get; set; }
         public string USER_APE_PATERNO { get; set; }
         public string USER_APE_MATERNO { get; set; }
-        public string USER_NUM_DNI { get; set; }
+        public int? USER_TIPO_DOCUMENTO { get; set; }
+        public string USER_NUM_DOCUMENTO { get; set; }
         public string USER_TELEFONO { get; set; }
         public string USER_CELULAR { get; set; }
         public string USER_DIRECCION { get; set; }
         public string USER_CORREO { get; set; }
-        public int? USER_TIPO_DOCUMENTO { get; set; }
         public int? USER_ESTADO { get; set; }
     }
 }

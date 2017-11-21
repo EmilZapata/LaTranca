@@ -1,3 +1,4 @@
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\obj\Debug\LaTranca.MVC.E-Commerce.csprojResolveAssemblyReference.cache
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\roslyn\csc.exe
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -16,6 +17,9 @@ D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTra
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\Antlr3.Runtime.dll
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\EntityFramework.dll
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\EntityFramework.SqlServer.dll
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.Context.dll
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.Dominio.DTO.dll
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.ServicioAplicacion.dll
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\Microsoft.AspNet.Identity.Core.dll
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\Microsoft.AspNet.Identity.Owin.dll
@@ -40,6 +44,12 @@ D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\Syste
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\System.Web.WebPages.dll
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\System.Web.WebPages.Razor.dll
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\WebGrease.dll
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.Infraestructura.Datos.dll
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.Context.pdb
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.Dominio.DTO.pdb
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.ServicioAplicacion.pdb
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\EntityFramework.xml
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\EntityFramework.SqlServer.xml
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\System.Web.Helpers.xml
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\System.Web.Mvc.xml
@@ -50,8 +60,6 @@ D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\Syste
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\System.Web.WebPages.Razor.xml
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\Antlr3.Runtime.pdb
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\Newtonsoft.Json.xml
-D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\EntityFramework.xml
-D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\EntityFramework.SqlServer.xml
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\Microsoft.AspNet.Identity.Core.xml
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\Microsoft.AspNet.Identity.Owin.xml
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\Microsoft.AspNet.Identity.EntityFramework.xml
@@ -64,14 +72,6 @@ D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\Micro
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\Microsoft.Owin.Security.Google.xml
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\Microsoft.Owin.Security.Twitter.xml
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\obj\Debug\LaTranca.MVC.E-Commerce.csprojResolveAssemblyReference.cache
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.Infraestructura.Datos.pdb
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\obj\Debug\LaTranca.dll
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\obj\Debug\LaTranca.pdb
-D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.Dominio.DTO.dll
-D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.ServicioAplicacion.dll
-D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.Context.dll
-D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.Infraestructura.Datos.dll
-D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.Dominio.DTO.pdb
-D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.ServicioAplicacion.pdb
-D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.Context.pdb
-D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca\bin\LaTranca.Infraestructura.Datos.pdb

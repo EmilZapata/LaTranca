@@ -10,27 +10,27 @@ using System.Threading.Tasks;
 
 namespace LaTranca.Infraestructura.Datos.LaTranca
 {
-    public class ProductoRepository
+    public class TR_PRODUCTORepository
     {
         LaTrancaContext db = null;
 
-        public ProductoRepository(LaTrancaContext context)
+        public TR_PRODUCTORepository(LaTrancaContext context)
         {
             this.db = context;
         }
 
-        public List<Producto> GetListProductos()
+        public List<TR_PRODUCTO> GetListProductos()
         {
-            return db.Productos.ToList();
+            return db.PRODUCTOS.ToList();
         }
 
-        public Notification SaveUpdate(Producto model) {
+        public Notification SaveUpdate(TR_PRODUCTO model) {
             Notification notificacion;
             try
             {
-                if (model.idProducto == 0)
+                if (model.PROD_ID == 0)
                 {
-                    db.Productos.Add(model);
+                    db.PRODUCTOS.Add(model);
                 }
                 
                 db.SaveChanges();
@@ -45,9 +45,9 @@ namespace LaTranca.Infraestructura.Datos.LaTranca
             return notificacion;
         }
 
-        public Producto GetId(int id)
+        public TR_PRODUCTO GetId(int id)
         {
-            return db.Productos.Where(p => p.idProducto == id).FirstOrDefault();
+            return db.PRODUCTOS.Where(p => p.PROD_ID == id).FirstOrDefault();
         }
 
     }

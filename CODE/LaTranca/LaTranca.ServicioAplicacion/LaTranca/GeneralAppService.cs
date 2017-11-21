@@ -10,18 +10,18 @@ namespace LaTranca.ServicioAplicacion.LaTranca
 {
     public class GeneralAppService
     {
-        #region Tabla_Producto
-        public List<Producto> ListProducto()
+        #region TR_PRODUCTO
+        public List<TR_PRODUCTO> ListProducto()
         {
             return FactoryGeneral.GetProductoRepository().GetListProductos();
         }
 
-        public Notification SaveUpdateProducto(Producto entity)
+        public Notification SaveUpdateProducto(TR_PRODUCTO entity)
         {
             return FactoryGeneral.GetProductoRepository().SaveUpdate(entity);
         }
 
-        public Producto GetIdProducto(int id)
+        public TR_PRODUCTO GetIdProducto(int id)
         {
             return FactoryGeneral.GetProductoRepository().GetId(id);
         }
