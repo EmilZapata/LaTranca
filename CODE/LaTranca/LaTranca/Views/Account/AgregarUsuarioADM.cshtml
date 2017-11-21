@@ -1,0 +1,216 @@
+﻿@model LaTranca.Dominio.DTO.LaTranca.TR_USUARIO
+
+@{
+    Layout = "~/Views/Shared/_LayoutAdminLaTranca.cshtml";
+}
+<div class="row border-bottom">
+    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#">
+                <i class="fa fa-bars"></i>
+            </a>
+
+        </div>
+
+
+    </nav>
+</div>
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Gestión de Productos</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="producto_crud_tranca.html">Usuarios</a>
+            </li>
+            <li class="active">
+                <strong>Agregar</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInRight ecommerce">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="tabs-container">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a data-toggle="tab" href="#tab-1"> Información</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane active">
+                        <div class="panel-body">
+
+                            <fieldset class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Nombres:</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Apellidos:</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Tipo de documento:</label>
+                                    <div class="col-sm-10">
+                                        <select name="status" id="status" class="form-control">
+                                            <option value="1" selected>DNI</option>
+                                            <option value="2">RUC</option>
+                                            <option value="2">Carnet de Extranjero</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Numero de documento:</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Razon Social:</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Correo:</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Teléfono:</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Provincia:</label>
+                                    <div class="col-sm-10">
+                                        <select name="status" id="status" class="form-control">
+                                            <option value="1" selected>Enabled</option>
+                                            <option value="0">Disabled</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Ciudad:</label>
+                                    <div class="col-sm-10">
+                                        <select name="status" id="status" class="form-control">
+                                            <option value="1" selected>Enabled</option>
+                                            <option value="0">Disabled</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Distrito:</label>
+                                    <div class="col-sm-10">
+                                        <select name="status" id="status" class="form-control">
+                                            <option value="1" selected>Enabled</option>
+                                            <option value="0">Disabled</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Tipo de usuario:</label>
+                                    <div class="col-sm-10">
+                                        <select name="status" id="status" class="form-control">
+                                            <option value="1" selected>Administrador</option>
+                                            <option value="2">Cliente</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Fecha de vencimiento:</label>
+                                    <div class="col-sm-10">
+                                        <div class="input-group date">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </span>
+                                            <input type="text" class="form-control" value="07/01/2014">
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('#btnRegistrarUsuario').on('click', function () {
+                var usuario = getObjectUsuario();
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/Account/RegistrarUsuarioLaTranca',
+                    data: {
+                        model: usuario
+                    },
+                    typedata: 'JSON',
+                    success: function (data) {
+                        var mensaje = new Mensaje(data.notification);
+
+                        if (mensaje.tipo == 'exito') {
+                            mensaje.enviarMensaje();
+                            window.location = "/Account/ExitoRegistroUsuario";
+                        } else {
+                            mensaje.enviarMensaje();
+                        }
+                    },
+                    error: function () {
+                        var mensaje = new Mensaje({
+                            tipo: 'error',
+                            titulo: 'Error',
+                            mensaje: 'Error en el sistema.'
+                        });
+
+                        mensaje.enviarMensaje();
+                    }
+                });
+            });
+
+            function getObjectUsuario() {
+                var usuario = new Object();
+
+                usuario.USER_NOMBRES = $('#USER_NOMBRES').val();
+                usuario.USER_APE_PATERNO = $('#USER_APE_PATERNO').val();
+                usuario.USER_APE_MATERNO = $('#USER_APE_MATERNO').val();
+                usuario.USER_TIPO_DOCUMENTO = $('#tipoDocumento').val();
+                usuario.USER_NUM_DOCUMENTO = $('#USER_NUM_DOCUMENTO').val();
+                usuario.USER_TELEFONO = $('#USER_TELEFONO').val();
+                usuario.USER_CELULAR = $('#USER_CELULAR').val();
+                usuario.USER_DIRECCION = $('#USER_DIRECCION').val();
+                usuario.USER_CORREO = $('#USER_CORREO').val();
+
+                return usuario;
+            }
+        });
+    </script>
+}
+
+
+
+

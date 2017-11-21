@@ -171,6 +171,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ContactosController.cs" />
+    <Compile Include="Controllers\EventosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductosController.cs" />
@@ -316,6 +317,11 @@
     <Content Include="Views\Productos\SaveUpdateProducto.cshtml" />
     <Content Include="Views\Account\RegistrarUsuarioLaTranca.cshtml" />
     <Content Include="Views\Account\ExitoRegistroUsuario.cshtml" />
+    <Content Include="Views\Eventos\Index.cshtml" />
+    <Content Include="Views\Account\AgregarUsuarioADM.cshtml" />
+    <Content Include="Views\Account\CRUD.cshtml" />
+    <Content Include="Views\Home\InicioLaTrancaAdmin.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdminLaTranca.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

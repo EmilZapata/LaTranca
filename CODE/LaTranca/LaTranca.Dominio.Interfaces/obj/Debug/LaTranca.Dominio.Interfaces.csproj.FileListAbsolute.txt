@@ -2,3 +2,4 @@ D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Dominio.I
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Dominio.Interfaces\bin\Debug\LaTranca.Dominio.Interfaces.pdb
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Dominio.Interfaces\obj\Debug\LaTranca.Dominio.Interfaces.dll
 D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Dominio.Interfaces\obj\Debug\LaTranca.Dominio.Interfaces.pdb
+D:\USB\FISI\CICLO_VIII\TP2-2017-II\Git\LaTranca\CODE\LaTranca\LaTranca.Dominio.Interfaces\obj\Debug\LaTranca.Dominio.Interfaces.csprojResolveAssemblyReference.cache

@@ -1,0 +1,202 @@
+﻿@model LaTranca.Dominio.DTO.LaTranca.TR_USUARIO
+
+@{
+    Layout = "~/Views/Shared/_LayoutAdminLaTranca.cshtml";
+}
+
+<div class="row border-bottom">
+    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#">
+                <i class="fa fa-bars"></i>
+            </a>
+
+        </div>
+
+
+    </nav>
+</div>
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Gestión de Usuarios</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="/Account/CRUD">Usuarios</a>
+            </li>
+            <li class="active">
+                <strong>Lista</strong>
+            </li>
+        </ol>
+
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInRight ecommerce">
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <a class="btn btn-primary" href="/Account/AgregarUsuarioADM" style="margin-bottom:20px">Agregar Usuario</a>
+        </div>
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+
+                <div class="ibox-content">
+
+                    <div class="table-responsive">
+
+                        <table class="table table-striped table-bordered table-hover dataTables-example">
+
+                            <!--Emil aca lista los usuarios de acuerdo a los campos que vamos a mostrar-->
+                            <thead>
+                                <tr>
+                                    <th class="text-center">Nombre</th>
+                                    <th class="text-center">Apellidos</th>
+                                    <th class="text-center">Correo</th>
+                                    <th class="text-center">Celular</th>
+                                    <th class="text-center">Tipo de usuario</th>
+                                    <th class="text-center">Acciones</th>
+                                </tr>
+                            </thead>
+                            <!--iterar con un for-->
+                            <tbody>
+                                <tr class="gradeX">
+                                    <td class="text-center">Joshua</td>
+                                    <td class="text-center">Suasnabar Huapaya</td>
+                                    <td class="text-center">jsuasnabarh@gmail.com</td>
+                                    <td class="text-center">980591555</td>
+                                    <td class="text-center">Administrador</td>
+                                    <td class="text-center">
+                                        <div class="btn-group">
+                                            <a class="btn-white btn btn-xs" href="usuario_ver_tranca.html">Ver</a>
+                                            <a class="btn-white btn btn-xs" href="usuario_editar_tranca.html">Editar</a>
+                                            <a class="btn-white btn btn-xs demo4" href="#">Eliminar</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="gradeX">
+                                    <td class="text-center">Joshua</td>
+                                    <td class="text-center">Suasnabar Huapaya</td>
+                                    <td class="text-center">jsuasnabarh@gmail.com</td>
+                                    <td class="text-center">980591555</td>
+                                    <td class="text-center">Administrador</td>
+                                    <td class="text-center">
+                                        <div class="btn-group">
+                                            <a class="btn-white btn btn-xs" href="usuario_ver_tranca.html">Ver</a>
+                                            <a class="btn-white btn btn-xs" href="usuario_editar_tranca.html">Editar</a>
+                                            <a class="btn-white btn btn-xs demo4" href="#">Eliminar</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="gradeX">
+                                    <td class="text-center">Joshua</td>
+                                    <td class="text-center">Suasnabar Huapaya</td>
+                                    <td class="text-center">jsuasnabarh@gmail.com</td>
+                                    <td class="text-center">980591555</td>
+                                    <td class="text-center">Administrador</td>
+                                    <td class="text-center">
+                                        <div class="btn-group">
+                                            <a class="btn-white btn btn-xs" href="usuario_ver_tranca.html">Ver</a>
+                                            <a class="btn-white btn btn-xs" href="usuario_editar_tranca.html">Editar</a>
+                                            <a class="btn-white btn btn-xs demo4" href="#">Eliminar</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="gradeX">
+                                    <td class="text-center">Joshua</td>
+                                    <td class="text-center">Suasnabar Huapaya</td>
+                                    <td class="text-center">jsuasnabarh@gmail.com</td>
+                                    <td class="text-center">980591555</td>
+                                    <td class="text-center">Administrador</td>
+                                    <td class="text-center">
+                                        <div class="btn-group">
+                                            <a class="btn-white btn btn-xs" href="usuario_ver_tranca.html">Ver</a>
+                                            <a class="btn-white btn btn-xs" href="usuario_editar_tranca.html">Editar</a>
+                                            <a class="btn-white btn btn-xs demo4" href="#">Eliminar</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th class="text-center">Nombre</th>
+                                    <th class="text-center">Apellidos</th>
+                                    <th class="text-center">Correo</th>
+                                    <th class="text-center">Celular</th>
+                                    <th class="text-center">Tipo de usuario</th>
+                                    <th class="text-center">Acciones</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('#btnRegistrarUsuario').on('click', function () {
+                var usuario = getObjectUsuario();
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/Account/RegistrarUsuarioLaTranca',
+                    data: {
+                        model: usuario
+                    },
+                    typedata: 'JSON',
+                    success: function (data) {
+                        var mensaje = new Mensaje(data.notification);
+
+                        if (mensaje.tipo == 'exito') {
+                            mensaje.enviarMensaje();
+                            window.location = "/Account/ExitoRegistroUsuario";
+                        } else {
+                            mensaje.enviarMensaje();
+                        }
+                    },
+                    error: function () {
+                        var mensaje = new Mensaje({
+                            tipo: 'error',
+                            titulo: 'Error',
+                            mensaje: 'Error en el sistema.'
+                        });
+
+                        mensaje.enviarMensaje();
+                    }
+                });
+            });
+
+            function getObjectUsuario() {
+                var usuario = new Object();
+
+                usuario.USER_NOMBRES = $('#USER_NOMBRES').val();
+                usuario.USER_APE_PATERNO = $('#USER_APE_PATERNO').val();
+                usuario.USER_APE_MATERNO = $('#USER_APE_MATERNO').val();
+                usuario.USER_TIPO_DOCUMENTO = $('#tipoDocumento').val();
+                usuario.USER_NUM_DOCUMENTO = $('#USER_NUM_DOCUMENTO').val();
+                usuario.USER_TELEFONO = $('#USER_TELEFONO').val();
+                usuario.USER_CELULAR = $('#USER_CELULAR').val();
+                usuario.USER_DIRECCION = $('#USER_DIRECCION').val();
+                usuario.USER_CORREO = $('#USER_CORREO').val();
+
+                return usuario;
+            }
+        });
+    </script>
+}
+
+
+
+

@@ -520,6 +520,49 @@ namespace LaTranca.Controllers
 
         [AllowAnonymous]
         [HttpGet]
+        public ActionResult CRUD()
+        {
+            //TR_USUARIO nuevoUsuario = new TR_USUARIO();
+
+            return View();
+        }
+
+        [AllowAnonymous]
+        [HttpGet]
+        public ActionResult AgregarUsuarioADM()
+        {
+            //TR_USUARIO nuevoUsuario = new TR_USUARIO();
+
+            return View();
+        }
+
+
+
+        [AllowAnonymous]
+        [HttpGet]
+        public ActionResult RegistrarUsuarioADM()
+        {
+            TR_USUARIO nuevoUsuario = new TR_USUARIO();
+
+            return View(nuevoUsuario);
+        }
+
+        [AllowAnonymous]
+        [HttpPost]
+        public ActionResult RegistrarUsuarioADM(TR_USUARIO model)
+        {
+            Notification ntf = null;
+
+            ntf = appLT.SaveUpdate(model);
+
+            return Json(new
+            {
+                notification = ntf
+            });
+        }
+
+        [AllowAnonymous]
+        [HttpGet]
         public ActionResult ExitoRegistroUsuario()
         {
             return View();

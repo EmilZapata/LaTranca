@@ -1,102 +1,70 @@
 ﻿@using LaTranca.Models
 @model LoginViewModel
 @{
-    ViewBag.Title = "LoginLaTranca";
-    Layout = "~/Views/Shared/_LayoutLaTranca.cshtml";
+    Layout = null;
 }
+<!DOCTYPE html>
+<html>
 
-<link href="~/Content_LaTranca/css/animate1.css" rel="stylesheet" />
-<link href="~/Content_LaTranca/css/style1.css" rel="stylesheet" />
+<head>
 
-<!-- Slider Start -->
-<section id="global-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="block">
-                    <h1><b>La Tranca siempre a su servicio</b></h1>
-                    <p>El mejor café en el mejor lugar.</p>
-                </div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La Tranca | Login</title>
+
+    <link href="~/Content_LaTranca/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content_LaTranca/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="~/Content_LaTranca/css/animate.css" rel="stylesheet">
+    <link href="~/Content_LaTranca/css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+
+    <div class="middle-box text-center loginscreen animated fadeInDown">
+        <div>
+            <div>
+
+                <img style="width: 250px; margin-top:80px" src="~/Content_LaTranca/img/portfolio/logo.png" alt="Logo">
+
             </div>
-        </div>
-    </div>
-</section>
-<!-- login form start -->
-
-<section id="contact-form" style="padding-top : 30px">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-5">
-                <h1>
-                    Iniciar Sesion
-                </h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4 col-sm-12">
-                <div class="block">
-                    @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            <h3>Bienvenido a La Tranca</h3>
+            <p>
+                El mejor café en el mejor lugar.
+                <!--Continually expanded and constantly improved Inspinia Admin Them (IN+)-->
+            </p>
+            <p>Iniciar Sesión</p>
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
             {
-                        @Html.AntiForgeryToken()
-                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                        <div class="form-group">
-                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Ingrese su usuario" })
-                                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
-                           
-                        </div>
-                        <div class="form-group">
-                                @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Ingrese su usuario" })
-                                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
-                           
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-offset-2 col-md-10">
-                                <div class="checkbox">
-                                    @Html.CheckBoxFor(m => m.RememberMe)
-                                    @Html.LabelFor(m => m.RememberMe)
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            @Html.ActionLink("Suscribirse", "RegistrarUsuarioLaTranca","Account")
-                        </div>
-                        <div class="form-group">
-                            <button class="btn btn-default" type="submit">Entrar</button>
-                        </div>
-                    }
-                    @*<form>
-                        <div class="form-group">
-                            <input id="usuario" type="text" class="form-control" placeholder="Ingrese su usuario">
-                        </div>
-                        <div class="form-group">
-                            <input id="contraseña" type="password" class="form-control" placeholder="Contraseña">
-                        </div>
-                        <form>
-                        </form>
-                    </form>*@
-                </div>
-            </div>
-            <div class="col-md-4"></div>
-        </div>
+                @Html.AntiForgeryToken()
 
-    </div>
-</section>
-
-@*<section id="contact-form">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4 col-sm-12">
-                <div class="block">
+                <div class="form-group">
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Usuario" })
+                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
 
 
                 </div>
-            </div>
-            <div class="col-md-4"></div>
+                <div class="form-group">
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Contraseña" })
+                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                </div>
+                @Html.ActionLink("Suscribirse", "RegistrarUsuarioLaTranca", "Account")
+                
+                <button type="submit" class="btn btn-primary block full-width m-b">Ingresar</button>
+
+                <a href="#"><small>Olvide mi contraseña</small></a>
+                <p class="text-muted text-center"><small>¿No cuentas con una cuenta?</small></p>
+                <a class="btn btn-sm btn-white btn-block" href="register.html">Crear una cuenta</a>
+            }
+            <p class="m-t"> <small>UNMSM FISI &copy; 2017</small> </p>
         </div>
-
     </div>
-</section>*@
 
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
