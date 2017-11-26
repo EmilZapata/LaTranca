@@ -13,5 +13,8 @@ namespace LaTranca.Areas.MuduloAdministracion.Controllers
         {
             return View();
         }
+
+
+
     }
 }

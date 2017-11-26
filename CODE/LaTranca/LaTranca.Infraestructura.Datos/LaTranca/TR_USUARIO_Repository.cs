@@ -42,14 +42,24 @@ namespace LaTranca.Infraestructura.Datos.LaTranca
                 }
                 else
                 {
-                    //entity.ACTUALIZACION_FECHA = DateTime.Now;
+                    var user = db.USUARIOS.Where(u => u.USER_ID == entity.USER_ID).FirstOrDefault();
+
+                    user.USER_NOMBRES = entity.USER_NOMBRES;
+                    user.USER_APE_PATERNO = entity.USER_APE_PATERNO;
+                    user.USER_APE_MATERNO = entity.USER_APE_MATERNO;
+                    user.USER_TIPO_DOCUMENTO = entity.USER_TIPO_DOCUMENTO;
+                    user.USER_NUM_DOCUMENTO = entity.USER_NUM_DOCUMENTO;
+                    user.USER_TELEFONO = entity.USER_TELEFONO;
+                    user.USER_CELULAR = entity.USER_CELULAR;
+                    user.USER_DIRECCION = entity.USER_DIRECCION;
+                    user.USER_CORREO = entity.USER_CORREO;
                 }
 
                 db.SaveChanges();
                 notificacion = new Notification("exito", "Exito", "Transaccion exitosa.");
 
             }
-            catch (Exception excp)
+            catch (Exception ex)
             {
                 notificacion = new Notification("error", "Error", "Error en el sistema");
             }

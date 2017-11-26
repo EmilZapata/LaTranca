@@ -6,10 +6,16 @@ using System.Web.Mvc;
 
 namespace LaTranca.Areas.MuduloAdministracion.Controllers
 {
-    public class GestorFeriasController : Controller
+    public class GestorEventosController : Controller
     {
         // GET: MuduloAdministracion/GestorEventos
         public ActionResult Index()
+        {
+            return View();
+        }
+
+
+        public ActionResult SaveUpdateEvento()
         {
             return View();
         }

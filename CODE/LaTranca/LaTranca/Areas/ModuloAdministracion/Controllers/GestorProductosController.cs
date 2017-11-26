@@ -13,5 +13,10 @@ namespace LaTranca.Areas.MuduloAdministracion.Controllers
         {
             return View();
         }
+
+        public ActionResult SaveUpdateProducto()
+        {
+           return View();
+        }
     }
 }

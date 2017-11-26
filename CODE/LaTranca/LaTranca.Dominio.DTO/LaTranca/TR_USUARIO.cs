@@ -11,6 +11,10 @@ namespace LaTranca.Dominio.DTO.LaTranca
     [Table("TR_USUARIO")]
     public class TR_USUARIO
     {
+        public TR_USUARIO() {
+            this.USER_TIPO_DOCUMENTO = 3;
+        }
+
         [Key]
         public int USER_ID { get; set; }
         public string AspNetUsers_Id { get; set; }

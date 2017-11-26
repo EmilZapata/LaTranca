@@ -43,7 +43,9 @@
                             </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
                                 <li>
-                                    <a href="login.html">Cerrar sessión</a>
+                                    
+                                        <a href="/Account/LogOff">Cerrar sessión</a>
+
                                 </li>
                             </ul>
                         </div>
@@ -69,12 +71,13 @@
                             <span class="nav-label">Gestión de Ferias</span>
                         </a>
                     </li>
+                    <!--
                     <li>
                         <a href="~/ModuloAdministracion/GestorVentas">
                             <i class="fa fa-diamond"></i>
                             <span class="nav-label">Gestión de Ventas</span>
                         </a>
-                    </li>
+                    </li>-->
 
                 </ul>
 
@@ -109,7 +112,7 @@
         </div>
     </div>
     <!-- Mainly scripts -->
-    <script src="~/Content_LaTranca/js/jquery-2.1.1.js"></script>
+    <script src="~/Content_LaTranca/js_iu/jquery-2.1.1.js"></script>
     <script src="~/Content_LaTranca/js/bootstrap.min.js"></script>
     <script src="~/Content_LaTranca/js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="~/Content_LaTranca/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
@@ -121,6 +124,50 @@
 
     <!-- FooTable -->
     <script src="~/Content_LaTranca/js/plugins/footable/footable.all.min.js"></script>
+
+    <script>
+        try {
+            var Mensaje = function (options) {
+                try {
+                    _this = this;
+                    this.tipo = options.tipo || 'mensaje';
+                    this.titulo = options.titulo || '';
+                    this.mensaje = options.mensaje || '';
+
+                    switch (this.tipo) {
+
+                        case 'exito':
+                            this.className = 'with-icon check-circle success';
+                            break;
+                        case 'informacion':
+                            this.className = 'with-icon question-circle primary';
+                            break;
+                        case 'advertencia':
+                            this.className = 'with-icon exclamation-circle warning';
+                            break;
+                        case 'error':
+                            this.className = 'with-icon times-circle danger';
+                            break;
+                    }
+
+                    this.enviarMensaje = function () {
+                        $.gritter.add({
+                            title: this.titulo,
+                            text: this.mensaje,
+                            time: 2000,
+                            class_name: this.className
+                        });
+                    }
+                } catch (e) {
+
+                }
+            }
+        } catch (e) {
+
+        }
+    </script>
+
+    <script src="~/Content_LaTranca/Gritter/jquery.gritter.js"></script>
 
     <!-- Page-Level Scripts -->
     <script>

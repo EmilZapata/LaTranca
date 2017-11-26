@@ -31,6 +31,8 @@
                                     <th class="text-center">Nombre</th>
                                     <th class="text-center">Apellidos</th>
                                     <th class="text-center">Correo</th>
+                                    <th class="text-center">Tipo de Documento</th>
+                                    <th class="text-center">Num. de Documento</th>
                                     <th class="text-center">Celular</th>
                                     <th class="text-center">Tipo de usuario</th>
                                     <th class="text-center">Acciones</th>
@@ -44,8 +46,23 @@
                                         <td class="text-center">@usuario.USER_NOMBRES</td>
                                         <td class="text-center">@(usuario.USER_APE_PATERNO + " " + usuario.USER_APE_MATERNO)</td>
                                         <td class="text-center">@usuario.USER_CORREO</td>
-                                        <td class="text-center">@usuario.USER_CORREO</td>
-                                        <td class="text-center">Administrador</td>
+                                        <td class="text-center">
+                                            @switch (usuario.USER_TIPO_DOCUMENTO)
+                                            {
+                                                case 1:
+                                                    <span>DNI</span>
+                                                    break;
+                                                case 2:
+                                                    <span>RUC</span>
+                                                    break;
+                                                case 3:
+                                                    <span>Carne Extranjero</span>
+                                                    break;
+                                            }
+                                        </td>
+                                        <td class="text-center">@usuario.USER_NUM_DOCUMENTO</td>
+                                        <td class="text-center">@usuario.USER_CELULAR</td>
+                                        <td class="text-center">Suscriptor</td>
                                         <td class="text-center">
                                             @*<div class="btn-group">
                                                     <a class="btn-white btn btn-xs" href="usuario_ver_tranca.html">Ver</a>

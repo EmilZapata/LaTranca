@@ -171,7 +171,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Areas\ModuloAdministracion\Controllers\GestorFeriasController.cs" />
+    <Compile Include="Areas\ModuloAdministracion\Controllers\GestorEventosController.cs" />
     <Compile Include="Areas\ModuloAdministracion\Controllers\GestorProductosController.cs" />
     <Compile Include="Areas\ModuloAdministracion\Controllers\GestorUsuariosController.cs" />
     <Compile Include="Areas\ModuloAdministracion\Controllers\GestorVentasController.cs" />
@@ -183,6 +183,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductosController.cs" />
     <Compile Include="Controllers\SeguridadController.cs" />
+    <Compile Include="Controllers\VentasController.cs" />
     <Compile Include="Controllers\ServiciosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -736,6 +737,10 @@
     <Content Include="Content_LaTranca\js_iu\plugins\diff_match_patch\COPYING" />
     <Content Include="Content_LaTranca\js_iu\plugins\justified-gallery\README.md" />
     <Content Include="Areas\ModuloAdministracion\Views\GestorUsuarios\SaveUpdateUsuario.cshtml" />
+    <Content Include="Areas\ModuloAdministracion\Views\GestorProductos\SaveUpdateProducto.cshtml" />
+    <Content Include="Areas\ModuloAdministracion\Views\GestorProductos\Index.cshtml" />
+    <Content Include="Areas\ModuloAdministracion\Views\GestorEventos\Index.cshtml" />
+    <Content Include="Areas\ModuloAdministracion\Views\GestorEventos\SaveUpdateEvento.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -799,13 +804,14 @@
     <Content Include="Views\Home\InicioLaTrancaAdmin.cshtml" />
     <Content Include="Views\Shared\_LayoutAdminLaTranca.cshtml" />
     <Content Include="Views\Shared\Modulos\_LayoutAdminLaTranca.cshtml" />
+    <Content Include="Views\Ventas\Index.cshtml" />
+    <Content Include="Views\Ventas\Transaccion.cshtml" />
+    <Content Include="Views\Ventas\Confirmacion.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\ModuloAdministracion\Content\Css\" />
     <Folder Include="Areas\ModuloAdministracion\Models\" />
-    <Folder Include="Areas\ModuloAdministracion\Views\GestorEventos\" />
-    <Folder Include="Areas\ModuloAdministracion\Views\GestorProductos\" />
     <Folder Include="Areas\ModuloAdministracion\Views\GestorVentas\" />
     <Folder Include="Areas\ModuloAdministracion\Views\Shared\" />
     <Folder Include="Views\Seguridad\" />
